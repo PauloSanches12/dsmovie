@@ -1,10 +1,8 @@
-import React from 'react';
-
-// import { Container } from './styles';
+import Pagination from 'components/Pagination';
 
 const Listing: React.FC = () => {
   return (
-      <h1>Página Listing</h1>
+      <Pagination />
   );
 }
 
