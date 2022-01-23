@@ -6,12 +6,12 @@ import javax.persistence.JoinColumn
 import javax.persistence.ManyToOne
 
 @Embeddable
-class ScorePK : Serializable {
+data class ScorePK (
     @ManyToOne
     @JoinColumn(name = "movie_id")
-    private val movie: Movie? = null
+    val movie: Movie,
 
     @ManyToOne
     @JoinColumn(name = "user_id")
-    private val user: User? = null
-}
+    val user: User
+): Serializable
